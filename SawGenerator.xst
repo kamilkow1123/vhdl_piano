@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/xst"
+elaborate
+-ifn SawGenerator.prj
+-ifmt mixed

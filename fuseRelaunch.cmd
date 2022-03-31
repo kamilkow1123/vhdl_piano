@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schema_schema_sch_tb_isim_beh.exe" -prj "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schema_schema_sch_tb_beh.prj" "work.schema_schema_sch_tb" 
