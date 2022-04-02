@@ -1,0 +1,3 @@
+vhdl work "SawGenerator.vhd"
+vhdl work "KeyboardMapper.vhd"
+vhdl work "schemaWithKeyboard.vhf"

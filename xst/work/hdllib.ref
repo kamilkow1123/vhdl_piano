@@ -1,2 +1,6 @@
-EN sawgenerator NULL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" sub00/vhpl00 1648501079
-AR sawgenerator behavioral "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" sub00/vhpl01 1648501080
+AR keyboardmapper behavioral "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" sub00/vhpl03 1648913456
+AR schemawithkeyboard behavioral "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" sub00/vhpl05 1648913460
+EN keyboardmapper NULL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" sub00/vhpl02 1648913455
+EN sawgenerator NULL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" sub00/vhpl00 1648913457
+EN schemawithkeyboard NULL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" sub00/vhpl04 1648913459
+AR sawgenerator behavioral "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" sub00/vhpl01 1648913458

@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl schemaWithKeyboard_drc.vhf -w {C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.sch} 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl schemaWithKeyboard.vhf -w {C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.sch} 
+xst -intstyle ise -ifn "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.xst" -ofn "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 "schemaWithKeyboard.ngc" schemaWithKeyboard.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schemaWithKeyboard_map.ncd schemaWithKeyboard.ngd schemaWithKeyboard.pcf 

@@ -1,0 +1,29 @@
+Command line:
+   KeyboardMapperTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51162
+
+Sat Apr 02 17:01:26 2022
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5150.91 Meg
+
+ Total Signals          : 15
+ Total Nets             : 22
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 7
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 383
+Total Line Count : 67
+
+ Total Simulation Time: 28.5625 sec
+
+ Current Memory Usage: 4836.34 Meg
+
+Sat Apr 02 17:07:42 2022
+

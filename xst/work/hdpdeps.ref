@@ -1,8 +1,24 @@
-V3 3
+V3 14
+FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" 2022/04/02.16:48:49 P.20131013
+EN work/KeyboardMapper 1648913455 \
+      FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/KeyboardMapper/Behavioral 1648913456 \
+      FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" \
+      EN work/KeyboardMapper 1648913455
 FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" 2022/03/28.22:28:43 P.20131013
-EN work/SawGenerator 1648501079 \
+EN work/SawGenerator 1648913457 \
       FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/SawGenerator/Behavioral 1648501080 \
+AR work/SawGenerator/Behavioral 1648913458 \
       FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" \
-      EN work/SawGenerator 1648501079
+      EN work/SawGenerator 1648913457
+FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" 2022/04/02.17:30:52 P.20131013
+EN work/schemaWithKeyboard 1648913459 \
+      FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/schemaWithKeyboard/BEHAVIORAL 1648913460 \
+      FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" \
+      EN work/schemaWithKeyboard 1648913459 CP PS2_Kbd CP KeyboardMapper \
+      CP SawGenerator CP DACWrite

@@ -1,0 +1,2 @@
+vhdl isim_temp "KeyboardMapper.vhd"
+vhdl isim_temp "KeyboardMapperTest.vhd"

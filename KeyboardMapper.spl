@@ -1,0 +1,9 @@
+[Inputs]
+Clk
+E0
+F0
+Data_In_Ready
+=Data_In[7:0]=
+[Outputs]
+=Code_Out[3:0]=
+[BiDir]

@@ -1,25 +1,19 @@
-Running: D:\PROJEKTY\xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schema_schema_sch_tb_isim_beh.exe -prj C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schema_schema_sch_tb_beh.prj work.schema_schema_sch_tb 
+Running: D:\PROJEKTY\xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapperTest_isim_beh.exe -prj C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapperTest_beh.prj work.KeyboardMapperTest 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 12
 Turning on mult-threading, number of parallel sub-compilation jobs: 24 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" into library work
-Parsing VHDL file "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schema.vhf" into library work
-Parsing VHDL file "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SchemaTest.vhd" into library work
+Parsing VHDL file "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" into library work
+Parsing VHDL file "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapperTest.vhd" into library work
 Starting static elaboration
-WARNING:HDLCompiler:89 - "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schema.vhf" Line 82: <dacwrite> remains a black-box since it has no binding entity.
 Completed static elaboration
-WARNING:Simulator:648 - "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schema.vhf" Line 82. Instance dacwrite is unbound
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package numeric_std
-Compiling package vcomponents
-Compiling architecture behavioral of entity SawGenerator [sawgenerator_default]
-Compiling architecture behavioral of entity schema [schema_default]
-Compiling architecture behavioral of entity schema_schema_sch_tb
+Compiling architecture behavioral of entity KeyboardMapper [keyboardmapper_default]
+Compiling architecture behavior of entity keyboardmappertest
 Time Resolution for simulation is 1ps.
-WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: System nie mo¿e odnale æ okre lonej  cie¿ki, "isim\schema_schema_sch_tb_isim_beh.exe.sim\libPortability.dll".
-Compiled 9 VHDL Units
-Built simulation executable C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schema_schema_sch_tb_isim_beh.exe
-Fuse Memory Usage: 50548 KB
-Fuse CPU Usage: 468 ms
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: System nie mo¿e odnale æ okre lonej  cie¿ki, "isim\KeyboardMapperTest_isim_beh.exe.sim\libPortability.dll".
+Compiled 5 VHDL Units
+Built simulation executable C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapperTest_isim_beh.exe
+Fuse Memory Usage: 30424 KB
+Fuse CPU Usage: 312 ms
