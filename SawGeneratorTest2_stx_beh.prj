@@ -1,0 +1,2 @@
+vhdl isim_temp "SawGenerator.vhd"
+vhdl isim_temp "SawGeneratorTest2.vhd"

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/xst"
+elaborate
+-ifn VGAMapper.prj
+-ifmt mixed

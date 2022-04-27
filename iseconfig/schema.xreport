@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-04-02T15:04:37</DateModified>
+  <DateModified>2022-04-21T09:13:05</DateModified>
   <ModuleName>schema</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/iseconfig/schema.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/lab/Desktop/organs/iseconfig/schema.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/lab/Desktop/organs\</ImplementationReportsDirectory>
   <DateInitialized>2022-03-28T23:00:58</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

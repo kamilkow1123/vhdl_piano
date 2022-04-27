@@ -1,1 +1,80 @@
 sch2sym -intstyle ise -family spartan3e -refsym schema {C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schema.sch} {C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schema.sym} 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/organs/schema.xst" -ofn "C:/Users/lab/Desktop/organs/schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/organs/schema.xst" -ofn "C:/Users/lab/Desktop/organs/schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/organs/schema.xst" -ofn "C:/Users/lab/Desktop/organs/schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/organs/schema.xst" -ofn "C:/Users/lab/Desktop/organs/schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/organs/schema.xst" -ofn "C:/Users/lab/Desktop/organs/schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/organs/schema.xst" -ofn "C:/Users/lab/Desktop/organs/schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/organs/schema.xst" -ofn "C:/Users/lab/Desktop/organs/schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -uc ADC_DAC.ucf -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/organs/schema.xst" -ofn "C:/Users/lab/Desktop/organs/schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -uc ADC_DAC.ucf -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf -ucf GenIO.ucf -ucf ADC_DAC.ucf 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/organs/schema.xst" -ofn "C:/Users/lab/Desktop/organs/schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ADC_DAC.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ADC_DAC.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf -ucf ADC_DAC.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ADC_DAC.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf -ucf ADC_DAC.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/organs/schema.xst" -ofn "C:/Users/lab/Desktop/organs/schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ADC_DAC.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf -ucf ADC_DAC.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f schema.ut schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/organs/schema.xst" -ofn "C:/Users/lab/Desktop/organs/schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ADC_DAC.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 schema.ngc schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schema_map.ncd schema.ngd schema.pcf 
+par -w -intstyle ise -ol high -t 1 schema_map.ncd schema.ncd schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schema.twx schema.ncd -o schema.twr schema.pcf -ucf ADC_DAC.ucf -ucf GenIO.ucf 
+bitgen -intstyle ise -f schema.ut schema.ncd 

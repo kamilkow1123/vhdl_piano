@@ -2,28 +2,27 @@ Command line:
    SawGeneratorTest_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  58688
+     -socket  53215
 
-Mon Mar 28 22:36:22 2022
+Thu Apr 21 08:40:08 2022
 
 
  Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 5151.06 Meg
+ Current Memory Usage: 5150.92 Meg
 
  Total Signals          : 12
- Total Nets             : 29
+ Total Nets             : 26
  Total Signal Drivers   : 8
  Total Blocks           : 4
  Total Primitive Blocks : 3
  Total Processes        : 6
  Total Traceable Variables  : 14
- Total Scalar Nets and Variables : 513
-Total Line Count : 49
+ Total Scalar Nets and Variables : 510
 
- Total Simulation Time: 12.25 sec
+ Total Simulation Time: 23.9531 sec
 
- Current Memory Usage: 4679.2 Meg
+ Current Memory Usage: 4993.63 Meg
 
-Mon Mar 28 22:38:49 2022
+Thu Apr 21 08:43:28 2022
 

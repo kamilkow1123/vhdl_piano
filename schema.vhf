@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : schema.vhf
--- /___/   /\     Timestamp : 03/28/2022 23:16:58
+-- /___/   /\     Timestamp : 04/21/2022 09:18:26
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schema.vhf" -w "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schema.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/lab/Desktop/organs/schema.vhf -w C:/Users/lab/Desktop/organs/schema.sch
 --Design Name: schema
 --Device: spartan3e
 --Purpose:
@@ -27,10 +27,10 @@ use UNISIM.Vcomponents.ALL;
 
 entity schema is
    port ( Clk         : in    std_logic; 
+          Res         : in    std_logic; 
           SPI_MISO    : in    std_logic; 
           AD_CONV     : out   std_logic; 
           AMP_CS      : out   std_logic; 
-          Busy        : out   std_logic; 
           DAC_CLR     : out   std_logic; 
           DAC_CS      : out   std_logic; 
           FPGA_INIT_B : out   std_logic; 
@@ -41,12 +41,11 @@ entity schema is
 end schema;
 
 architecture BEHAVIORAL of schema is
-   signal XLXN_1                  : std_logic;
-   signal XLXN_2                  : std_logic_vector (11 downto 0);
-   signal XLXN_3                  : std_logic_vector (3 downto 0);
-   signal XLXN_4                  : std_logic_vector (3 downto 0);
-   signal XLXN_6                  : std_logic_vector (3 downto 0);
-   signal XLXI_4_Reset_openSignal : std_logic;
+   signal XLXN_3      : std_logic_vector (3 downto 0);
+   signal XLXN_4      : std_logic_vector (3 downto 0);
+   signal XLXN_6      : std_logic_vector (3 downto 0);
+   signal XLXN_8      : std_logic;
+   signal XLXN_9      : std_logic_vector (11 downto 0);
    component DACWrite
       port ( Reset       : in    std_logic; 
              Start       : in    std_logic; 
@@ -78,19 +77,19 @@ architecture BEHAVIORAL of schema is
 begin
    XLXN_3(3 downto 0) <= x"3";
    XLXN_4(3 downto 0) <= x"F";
-   XLXN_6(3 downto 0) <= x"1";
+   XLXN_6(3 downto 0) <= x"2";
    XLXI_4 : DACWrite
       port map (Addr(3 downto 0)=>XLXN_4(3 downto 0),
                 Clk_Sys=>Clk,
                 Clk_50MHz=>Clk,
                 Cmd(3 downto 0)=>XLXN_3(3 downto 0),
-                DATA(11 downto 0)=>XLXN_2(11 downto 0),
-                Reset=>XLXI_4_Reset_openSignal,
+                DATA(11 downto 0)=>XLXN_9(11 downto 0),
+                Reset=>Res,
                 SPI_MISO=>SPI_MISO,
-                Start=>XLXN_1,
+                Start=>XLXN_8,
                 AD_CONV=>AD_CONV,
                 AMP_CS=>AMP_CS,
-                Busy=>Busy,
+                Busy=>open,
                 DAC_CLR=>DAC_CLR,
                 DAC_CS=>DAC_CS,
                 FPGA_INIT_B=>FPGA_INIT_B,
@@ -102,8 +101,8 @@ begin
    XLXI_5 : SawGenerator
       port map (Clk=>Clk,
                 Code(3 downto 0)=>XLXN_6(3 downto 0),
-                Sample(11 downto 0)=>XLXN_2(11 downto 0),
-                Sample_Rdy=>XLXN_1);
+                Sample(11 downto 0)=>XLXN_9(11 downto 0),
+                Sample_Rdy=>XLXN_8);
    
 end BEHAVIORAL;
 

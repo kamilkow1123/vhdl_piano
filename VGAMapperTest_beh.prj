@@ -1,0 +1,2 @@
+vhdl work "VGAMapper.vhd"
+vhdl work "VGAMapperTest.vhd"

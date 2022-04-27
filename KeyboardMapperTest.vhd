@@ -62,7 +62,7 @@ ARCHITECTURE behavior OF KeyboardMapperTest IS
    signal Code_Out : std_logic_vector(3 downto 0);
 
    -- Clock period definitions
-   constant Clk_period : time := 10 ns;
+   constant Clk_period : time := 20 ns;
  
 BEGIN
  

@@ -1,0 +1,784 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml schemaWithKeyboard.twx schemaWithKeyboard.ncd -o
+schemaWithKeyboard.twr schemaWithKeyboard.pcf -ucf ADC_DAC.ucf -ucf GenIO.ucf
+
+Design file:              schemaWithKeyboard.ncd
+Physical constraint file: schemaWithKeyboard.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "Clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 13406 paths analyzed, 406 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  12.290ns.
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_3/Sample_Counter_4 (SLICE_X36Y41.CE), 317 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     7.710ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/State_6 (FF)
+  Destination:          XLXI_3/Sample_Counter_4 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.290ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/State_6 to XLXI_3/Sample_Counter_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y74.XQ      Tcko                  0.591   XLXI_2/State<6>
+                                                       XLXI_2/State_6
+    SLICE_X50Y73.G2      net (fanout=2)        0.765   XLXI_2/State<6>
+    SLICE_X50Y73.Y       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>_SW0
+    SLICE_X50Y73.F3      net (fanout=1)        0.023   XLXI_2/Temp_Code<2>_SW0/O
+    SLICE_X50Y73.X       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>
+    SLICE_X46Y66.G2      net (fanout=14)       2.229   Code_Out_2_OBUF
+    SLICE_X46Y66.Y       Tilo                  0.759   XLXI_3/Cycles_Per_Step<7>
+                                                       XLXI_3/Mrom_Cycles_Per_Step61
+    SLICE_X47Y66.F1      net (fanout=1)        0.156   XLXI_3/Cycles_Per_Step<6>
+    SLICE_X47Y66.COUT    Topcyf                1.162   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<8>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<10>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<12>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<14>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.XB      Tcinxb                0.404   XLXI_3/Cycle_Counter_cmp_ge0000
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<16>
+    SLICE_X46Y67.F4      net (fanout=2)        0.605   XLXI_3/Cycle_Counter_cmp_ge0000
+    SLICE_X46Y67.X       Tilo                  0.759   XLXI_3/Cycle_Counter_and0000
+                                                       XLXI_3/Cycle_Counter_and00001
+    SLICE_X36Y41.CE      net (fanout=19)       2.292   XLXI_3/Cycle_Counter_and0000
+    SLICE_X36Y41.CLK     Tceck                 0.555   XLXI_3/Sample_Counter<4>
+                                                       XLXI_3/Sample_Counter_4
+    -------------------------------------------------  ---------------------------
+    Total                                     12.290ns (6.220ns logic, 6.070ns route)
+                                                       (50.6% logic, 49.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.712ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/State_5 (FF)
+  Destination:          XLXI_3/Sample_Counter_4 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.288ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/State_5 to XLXI_3/Sample_Counter_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X50Y74.YQ      Tcko                  0.652   XLXI_2/State<7>
+                                                       XLXI_2/State_5
+    SLICE_X50Y73.G1      net (fanout=2)        0.702   XLXI_2/State<5>
+    SLICE_X50Y73.Y       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>_SW0
+    SLICE_X50Y73.F3      net (fanout=1)        0.023   XLXI_2/Temp_Code<2>_SW0/O
+    SLICE_X50Y73.X       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>
+    SLICE_X46Y66.G2      net (fanout=14)       2.229   Code_Out_2_OBUF
+    SLICE_X46Y66.Y       Tilo                  0.759   XLXI_3/Cycles_Per_Step<7>
+                                                       XLXI_3/Mrom_Cycles_Per_Step61
+    SLICE_X47Y66.F1      net (fanout=1)        0.156   XLXI_3/Cycles_Per_Step<6>
+    SLICE_X47Y66.COUT    Topcyf                1.162   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<8>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<10>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<12>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<14>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.XB      Tcinxb                0.404   XLXI_3/Cycle_Counter_cmp_ge0000
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<16>
+    SLICE_X46Y67.F4      net (fanout=2)        0.605   XLXI_3/Cycle_Counter_cmp_ge0000
+    SLICE_X46Y67.X       Tilo                  0.759   XLXI_3/Cycle_Counter_and0000
+                                                       XLXI_3/Cycle_Counter_and00001
+    SLICE_X36Y41.CE      net (fanout=19)       2.292   XLXI_3/Cycle_Counter_and0000
+    SLICE_X36Y41.CLK     Tceck                 0.555   XLXI_3/Sample_Counter<4>
+                                                       XLXI_3/Sample_Counter_4
+    -------------------------------------------------  ---------------------------
+    Total                                     12.288ns (6.281ns logic, 6.007ns route)
+                                                       (51.1% logic, 48.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.774ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/State_6 (FF)
+  Destination:          XLXI_3/Sample_Counter_4 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.226ns (Levels of Logic = 13)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/State_6 to XLXI_3/Sample_Counter_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y74.XQ      Tcko                  0.591   XLXI_2/State<6>
+                                                       XLXI_2/State_6
+    SLICE_X50Y73.G2      net (fanout=2)        0.765   XLXI_2/State<6>
+    SLICE_X50Y73.Y       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>_SW0
+    SLICE_X50Y73.F3      net (fanout=1)        0.023   XLXI_2/Temp_Code<2>_SW0/O
+    SLICE_X50Y73.X       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>
+    SLICE_X46Y65.F4      net (fanout=14)       1.655   Code_Out_2_OBUF
+    SLICE_X46Y65.X       Tilo                  0.759   XLXI_3/Cycles_Per_Step<0>
+                                                       XLXI_3/Mrom_Cycles_Per_Step11
+    SLICE_X47Y63.F3      net (fanout=1)        0.312   XLXI_3/Cycles_Per_Step<0>
+    SLICE_X47Y63.COUT    Topcyf                1.162   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<0>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<0>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1>
+    SLICE_X47Y64.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1>
+    SLICE_X47Y64.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<3>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<2>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<3>
+    SLICE_X47Y65.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<3>
+    SLICE_X47Y65.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<5>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<4>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<5>
+    SLICE_X47Y66.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<5>
+    SLICE_X47Y66.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<8>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<10>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<12>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<14>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.XB      Tcinxb                0.404   XLXI_3/Cycle_Counter_cmp_ge0000
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<16>
+    SLICE_X46Y67.F4      net (fanout=2)        0.605   XLXI_3/Cycle_Counter_cmp_ge0000
+    SLICE_X46Y67.X       Tilo                  0.759   XLXI_3/Cycle_Counter_and0000
+                                                       XLXI_3/Cycle_Counter_and00001
+    SLICE_X36Y41.CE      net (fanout=19)       2.292   XLXI_3/Cycle_Counter_and0000
+    SLICE_X36Y41.CLK     Tceck                 0.555   XLXI_3/Sample_Counter<4>
+                                                       XLXI_3/Sample_Counter_4
+    -------------------------------------------------  ---------------------------
+    Total                                     12.226ns (6.574ns logic, 5.652ns route)
+                                                       (53.8% logic, 46.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_3/Sample_Counter_3 (SLICE_X37Y41.CE), 317 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     7.764ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/State_6 (FF)
+  Destination:          XLXI_3/Sample_Counter_3 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.236ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/State_6 to XLXI_3/Sample_Counter_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y74.XQ      Tcko                  0.591   XLXI_2/State<6>
+                                                       XLXI_2/State_6
+    SLICE_X50Y73.G2      net (fanout=2)        0.765   XLXI_2/State<6>
+    SLICE_X50Y73.Y       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>_SW0
+    SLICE_X50Y73.F3      net (fanout=1)        0.023   XLXI_2/Temp_Code<2>_SW0/O
+    SLICE_X50Y73.X       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>
+    SLICE_X46Y66.G2      net (fanout=14)       2.229   Code_Out_2_OBUF
+    SLICE_X46Y66.Y       Tilo                  0.759   XLXI_3/Cycles_Per_Step<7>
+                                                       XLXI_3/Mrom_Cycles_Per_Step61
+    SLICE_X47Y66.F1      net (fanout=1)        0.156   XLXI_3/Cycles_Per_Step<6>
+    SLICE_X47Y66.COUT    Topcyf                1.162   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<8>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<10>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<12>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<14>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.XB      Tcinxb                0.404   XLXI_3/Cycle_Counter_cmp_ge0000
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<16>
+    SLICE_X46Y67.F4      net (fanout=2)        0.605   XLXI_3/Cycle_Counter_cmp_ge0000
+    SLICE_X46Y67.X       Tilo                  0.759   XLXI_3/Cycle_Counter_and0000
+                                                       XLXI_3/Cycle_Counter_and00001
+    SLICE_X37Y41.CE      net (fanout=19)       2.238   XLXI_3/Cycle_Counter_and0000
+    SLICE_X37Y41.CLK     Tceck                 0.555   XLXI_3/Sample_Counter<3>
+                                                       XLXI_3/Sample_Counter_3
+    -------------------------------------------------  ---------------------------
+    Total                                     12.236ns (6.220ns logic, 6.016ns route)
+                                                       (50.8% logic, 49.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.766ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/State_5 (FF)
+  Destination:          XLXI_3/Sample_Counter_3 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.234ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/State_5 to XLXI_3/Sample_Counter_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X50Y74.YQ      Tcko                  0.652   XLXI_2/State<7>
+                                                       XLXI_2/State_5
+    SLICE_X50Y73.G1      net (fanout=2)        0.702   XLXI_2/State<5>
+    SLICE_X50Y73.Y       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>_SW0
+    SLICE_X50Y73.F3      net (fanout=1)        0.023   XLXI_2/Temp_Code<2>_SW0/O
+    SLICE_X50Y73.X       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>
+    SLICE_X46Y66.G2      net (fanout=14)       2.229   Code_Out_2_OBUF
+    SLICE_X46Y66.Y       Tilo                  0.759   XLXI_3/Cycles_Per_Step<7>
+                                                       XLXI_3/Mrom_Cycles_Per_Step61
+    SLICE_X47Y66.F1      net (fanout=1)        0.156   XLXI_3/Cycles_Per_Step<6>
+    SLICE_X47Y66.COUT    Topcyf                1.162   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<8>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<10>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<12>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<14>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.XB      Tcinxb                0.404   XLXI_3/Cycle_Counter_cmp_ge0000
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<16>
+    SLICE_X46Y67.F4      net (fanout=2)        0.605   XLXI_3/Cycle_Counter_cmp_ge0000
+    SLICE_X46Y67.X       Tilo                  0.759   XLXI_3/Cycle_Counter_and0000
+                                                       XLXI_3/Cycle_Counter_and00001
+    SLICE_X37Y41.CE      net (fanout=19)       2.238   XLXI_3/Cycle_Counter_and0000
+    SLICE_X37Y41.CLK     Tceck                 0.555   XLXI_3/Sample_Counter<3>
+                                                       XLXI_3/Sample_Counter_3
+    -------------------------------------------------  ---------------------------
+    Total                                     12.234ns (6.281ns logic, 5.953ns route)
+                                                       (51.3% logic, 48.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.828ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/State_6 (FF)
+  Destination:          XLXI_3/Sample_Counter_3 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.172ns (Levels of Logic = 13)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/State_6 to XLXI_3/Sample_Counter_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y74.XQ      Tcko                  0.591   XLXI_2/State<6>
+                                                       XLXI_2/State_6
+    SLICE_X50Y73.G2      net (fanout=2)        0.765   XLXI_2/State<6>
+    SLICE_X50Y73.Y       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>_SW0
+    SLICE_X50Y73.F3      net (fanout=1)        0.023   XLXI_2/Temp_Code<2>_SW0/O
+    SLICE_X50Y73.X       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>
+    SLICE_X46Y65.F4      net (fanout=14)       1.655   Code_Out_2_OBUF
+    SLICE_X46Y65.X       Tilo                  0.759   XLXI_3/Cycles_Per_Step<0>
+                                                       XLXI_3/Mrom_Cycles_Per_Step11
+    SLICE_X47Y63.F3      net (fanout=1)        0.312   XLXI_3/Cycles_Per_Step<0>
+    SLICE_X47Y63.COUT    Topcyf                1.162   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<0>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<0>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1>
+    SLICE_X47Y64.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1>
+    SLICE_X47Y64.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<3>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<2>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<3>
+    SLICE_X47Y65.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<3>
+    SLICE_X47Y65.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<5>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<4>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<5>
+    SLICE_X47Y66.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<5>
+    SLICE_X47Y66.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<8>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<10>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<12>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<14>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.XB      Tcinxb                0.404   XLXI_3/Cycle_Counter_cmp_ge0000
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<16>
+    SLICE_X46Y67.F4      net (fanout=2)        0.605   XLXI_3/Cycle_Counter_cmp_ge0000
+    SLICE_X46Y67.X       Tilo                  0.759   XLXI_3/Cycle_Counter_and0000
+                                                       XLXI_3/Cycle_Counter_and00001
+    SLICE_X37Y41.CE      net (fanout=19)       2.238   XLXI_3/Cycle_Counter_and0000
+    SLICE_X37Y41.CLK     Tceck                 0.555   XLXI_3/Sample_Counter<3>
+                                                       XLXI_3/Sample_Counter_3
+    -------------------------------------------------  ---------------------------
+    Total                                     12.172ns (6.574ns logic, 5.598ns route)
+                                                       (54.0% logic, 46.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_3/Sample_Counter_2 (SLICE_X37Y41.CE), 317 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     7.764ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/State_6 (FF)
+  Destination:          XLXI_3/Sample_Counter_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.236ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/State_6 to XLXI_3/Sample_Counter_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y74.XQ      Tcko                  0.591   XLXI_2/State<6>
+                                                       XLXI_2/State_6
+    SLICE_X50Y73.G2      net (fanout=2)        0.765   XLXI_2/State<6>
+    SLICE_X50Y73.Y       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>_SW0
+    SLICE_X50Y73.F3      net (fanout=1)        0.023   XLXI_2/Temp_Code<2>_SW0/O
+    SLICE_X50Y73.X       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>
+    SLICE_X46Y66.G2      net (fanout=14)       2.229   Code_Out_2_OBUF
+    SLICE_X46Y66.Y       Tilo                  0.759   XLXI_3/Cycles_Per_Step<7>
+                                                       XLXI_3/Mrom_Cycles_Per_Step61
+    SLICE_X47Y66.F1      net (fanout=1)        0.156   XLXI_3/Cycles_Per_Step<6>
+    SLICE_X47Y66.COUT    Topcyf                1.162   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<8>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<10>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<12>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<14>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.XB      Tcinxb                0.404   XLXI_3/Cycle_Counter_cmp_ge0000
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<16>
+    SLICE_X46Y67.F4      net (fanout=2)        0.605   XLXI_3/Cycle_Counter_cmp_ge0000
+    SLICE_X46Y67.X       Tilo                  0.759   XLXI_3/Cycle_Counter_and0000
+                                                       XLXI_3/Cycle_Counter_and00001
+    SLICE_X37Y41.CE      net (fanout=19)       2.238   XLXI_3/Cycle_Counter_and0000
+    SLICE_X37Y41.CLK     Tceck                 0.555   XLXI_3/Sample_Counter<3>
+                                                       XLXI_3/Sample_Counter_2
+    -------------------------------------------------  ---------------------------
+    Total                                     12.236ns (6.220ns logic, 6.016ns route)
+                                                       (50.8% logic, 49.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.766ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/State_5 (FF)
+  Destination:          XLXI_3/Sample_Counter_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.234ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/State_5 to XLXI_3/Sample_Counter_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X50Y74.YQ      Tcko                  0.652   XLXI_2/State<7>
+                                                       XLXI_2/State_5
+    SLICE_X50Y73.G1      net (fanout=2)        0.702   XLXI_2/State<5>
+    SLICE_X50Y73.Y       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>_SW0
+    SLICE_X50Y73.F3      net (fanout=1)        0.023   XLXI_2/Temp_Code<2>_SW0/O
+    SLICE_X50Y73.X       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>
+    SLICE_X46Y66.G2      net (fanout=14)       2.229   Code_Out_2_OBUF
+    SLICE_X46Y66.Y       Tilo                  0.759   XLXI_3/Cycles_Per_Step<7>
+                                                       XLXI_3/Mrom_Cycles_Per_Step61
+    SLICE_X47Y66.F1      net (fanout=1)        0.156   XLXI_3/Cycles_Per_Step<6>
+    SLICE_X47Y66.COUT    Topcyf                1.162   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<8>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<10>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<12>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<14>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.XB      Tcinxb                0.404   XLXI_3/Cycle_Counter_cmp_ge0000
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<16>
+    SLICE_X46Y67.F4      net (fanout=2)        0.605   XLXI_3/Cycle_Counter_cmp_ge0000
+    SLICE_X46Y67.X       Tilo                  0.759   XLXI_3/Cycle_Counter_and0000
+                                                       XLXI_3/Cycle_Counter_and00001
+    SLICE_X37Y41.CE      net (fanout=19)       2.238   XLXI_3/Cycle_Counter_and0000
+    SLICE_X37Y41.CLK     Tceck                 0.555   XLXI_3/Sample_Counter<3>
+                                                       XLXI_3/Sample_Counter_2
+    -------------------------------------------------  ---------------------------
+    Total                                     12.234ns (6.281ns logic, 5.953ns route)
+                                                       (51.3% logic, 48.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.828ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_2/State_6 (FF)
+  Destination:          XLXI_3/Sample_Counter_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.172ns (Levels of Logic = 13)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: XLXI_2/State_6 to XLXI_3/Sample_Counter_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y74.XQ      Tcko                  0.591   XLXI_2/State<6>
+                                                       XLXI_2/State_6
+    SLICE_X50Y73.G2      net (fanout=2)        0.765   XLXI_2/State<6>
+    SLICE_X50Y73.Y       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>_SW0
+    SLICE_X50Y73.F3      net (fanout=1)        0.023   XLXI_2/Temp_Code<2>_SW0/O
+    SLICE_X50Y73.X       Tilo                  0.759   Code_Out_2_OBUF
+                                                       XLXI_2/Temp_Code<2>
+    SLICE_X46Y65.F4      net (fanout=14)       1.655   Code_Out_2_OBUF
+    SLICE_X46Y65.X       Tilo                  0.759   XLXI_3/Cycles_Per_Step<0>
+                                                       XLXI_3/Mrom_Cycles_Per_Step11
+    SLICE_X47Y63.F3      net (fanout=1)        0.312   XLXI_3/Cycles_Per_Step<0>
+    SLICE_X47Y63.COUT    Topcyf                1.162   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<0>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<0>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1>
+    SLICE_X47Y64.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1>
+    SLICE_X47Y64.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<3>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<2>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<3>
+    SLICE_X47Y65.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<3>
+    SLICE_X47Y65.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<5>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<4>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<5>
+    SLICE_X47Y66.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<5>
+    SLICE_X47Y66.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<6>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<7>
+    SLICE_X47Y67.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<8>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<9>
+    SLICE_X47Y68.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<10>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<11>
+    SLICE_X47Y69.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<12>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<13>
+    SLICE_X47Y70.COUT    Tbyp                  0.118   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<14>
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.CIN     net (fanout=1)        0.000   XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<15>
+    SLICE_X47Y71.XB      Tcinxb                0.404   XLXI_3/Cycle_Counter_cmp_ge0000
+                                                       XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<16>
+    SLICE_X46Y67.F4      net (fanout=2)        0.605   XLXI_3/Cycle_Counter_cmp_ge0000
+    SLICE_X46Y67.X       Tilo                  0.759   XLXI_3/Cycle_Counter_and0000
+                                                       XLXI_3/Cycle_Counter_and00001
+    SLICE_X37Y41.CE      net (fanout=19)       2.238   XLXI_3/Cycle_Counter_and0000
+    SLICE_X37Y41.CLK     Tceck                 0.555   XLXI_3/Sample_Counter<3>
+                                                       XLXI_3/Sample_Counter_2
+    -------------------------------------------------  ---------------------------
+    Total                                     12.172ns (6.574ns logic, 5.598ns route)
+                                                       (54.0% logic, 46.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "Clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_1/reg11b_7 (SLICE_X55Y78.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.006ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_1/reg11b_8 (FF)
+  Destination:          XLXI_1/reg11b_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.006ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_BUFGP rising at 20.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: XLXI_1/reg11b_8 to XLXI_1/reg11b_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y78.XQ      Tcko                  0.473   XLXN_30<7>
+                                                       XLXI_1/reg11b_8
+    SLICE_X55Y78.BY      net (fanout=6)        0.398   XLXN_30<7>
+    SLICE_X55Y78.CLK     Tckdi       (-Th)    -0.135   XLXN_30<7>
+                                                       XLXI_1/reg11b_7
+    -------------------------------------------------  ---------------------------
+    Total                                      1.006ns (0.608ns logic, 0.398ns route)
+                                                       (60.4% logic, 39.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_1/reg11b_6 (SLICE_X55Y79.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.017ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_1/reg11b_7 (FF)
+  Destination:          XLXI_1/reg11b_6 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.017ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_BUFGP rising at 20.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: XLXI_1/reg11b_7 to XLXI_1/reg11b_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y78.YQ      Tcko                  0.470   XLXN_30<7>
+                                                       XLXI_1/reg11b_7
+    SLICE_X55Y79.BX      net (fanout=6)        0.454   XLXN_30<6>
+    SLICE_X55Y79.CLK     Tckdi       (-Th)    -0.093   XLXN_30<5>
+                                                       XLXI_1/reg11b_6
+    -------------------------------------------------  ---------------------------
+    Total                                      1.017ns (0.563ns logic, 0.454ns route)
+                                                       (55.4% logic, 44.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_4/Cnt_0 (SLICE_X39Y38.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.027ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_4/Cnt_0 (FF)
+  Destination:          XLXI_4/Cnt_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.027ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_BUFGP rising at 20.000ns
+  Destination Clock:    Clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: XLXI_4/Cnt_0 to XLXI_4/Cnt_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y38.XQ      Tcko                  0.473   XLXI_4/Cnt<0>
+                                                       XLXI_4/Cnt_0
+    SLICE_X39Y38.BX      net (fanout=6)        0.461   XLXI_4/Cnt<0>
+    SLICE_X39Y38.CLK     Tckdi       (-Th)    -0.093   XLXI_4/Cnt<0>
+                                                       XLXI_4/Cnt_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.027ns (0.566ns logic, 0.461ns route)
+                                                       (55.1% logic, 44.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "Clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 18.348ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 0.826ns (Tcl)
+  Physical resource: XLXI_4/Cnt<4>/CLK
+  Logical resource: XLXI_4/Cnt_4/CK
+  Location pin: SLICE_X38Y36.CLK
+  Clock network: Clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.348ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 0.826ns (Tch)
+  Physical resource: XLXI_4/Cnt<4>/CLK
+  Logical resource: XLXI_4/Cnt_4/CK
+  Location pin: SLICE_X38Y36.CLK
+  Clock network: Clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.348ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.652ns (605.327MHz) (Tcp)
+  Physical resource: XLXI_4/Cnt<4>/CLK
+  Logical resource: XLXI_4/Cnt_4/CK
+  Location pin: SLICE_X38Y36.CLK
+  Clock network: Clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |   12.290|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 13406 paths, 0 nets, and 637 connections
+
+Design statistics:
+   Minimum period:  12.290ns{1}   (Maximum frequency:  81.367MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu Apr 21 10:08:05 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4511 MB
+
+
+

@@ -1,6 +1,10 @@
-AR keyboardmapper behavioral "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" sub00/vhpl03 1648913456
-AR schemawithkeyboard behavioral "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" sub00/vhpl05 1648913460
-EN keyboardmapper NULL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" sub00/vhpl02 1648913455
-EN sawgenerator NULL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" sub00/vhpl00 1648913457
-EN schemawithkeyboard NULL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" sub00/vhpl04 1648913459
-AR sawgenerator behavioral "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" sub00/vhpl01 1648913458
+AR keyboardmapper behavioral C:/Users/lab/Desktop/organs/KeyboardMapper.vhd sub00/vhpl03 1650528464
+AR schemawithkeyboard behavioral C:/Users/lab/Desktop/organs/schemaWithKeyboard.vhf sub00/vhpl05 1650528468
+EN keyboardmapper NULL C:/Users/lab/Desktop/organs/KeyboardMapper.vhd sub00/vhpl02 1650528463
+EN schema NULL C:/Users/lab/Desktop/organs/schema.vhf sub00/vhpl06 1650525511
+AR schema behavioral C:/Users/lab/Desktop/organs/schema.vhf sub00/vhpl07 1650525512
+AR vgamapper behavioral "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/VGAMapper.vhd" sub00/vhpl09 1651002587
+EN vgamapper NULL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/VGAMapper.vhd" sub00/vhpl08 1651002586
+EN sawgenerator NULL C:/Users/lab/Desktop/organs/SawGenerator.vhd sub00/vhpl00 1650528465
+EN schemawithkeyboard NULL C:/Users/lab/Desktop/organs/schemaWithKeyboard.vhf sub00/vhpl04 1650528467
+AR sawgenerator behavioral C:/Users/lab/Desktop/organs/SawGenerator.vhd sub00/vhpl01 1650528466

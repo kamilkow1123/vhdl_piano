@@ -16,17 +16,13 @@
         <signal name="AD_CONV" />
         <signal name="SF_CE0" />
         <signal name="FPGA_INIT_B" />
-        <signal name="Busy" />
-        <signal name="XLXN_1" />
-        <signal name="XLXN_2(11:0)" />
         <signal name="XLXN_3(3:0)" />
         <signal name="XLXN_4(3:0)" />
-        <signal name="XLXN_5" />
         <signal name="XLXN_6(3:0)" />
-        <signal name="XLXN_7" />
-        <signal name="XLXN_9" />
-        <signal name="XLXN_10" />
         <signal name="Clk" />
+        <signal name="Res" />
+        <signal name="XLXN_8" />
+        <signal name="XLXN_9(11:0)" />
         <port polarity="Output" name="SPI_MOSI" />
         <port polarity="Input" name="SPI_MISO" />
         <port polarity="Output" name="SPI_SCK" />
@@ -37,8 +33,8 @@
         <port polarity="Output" name="AD_CONV" />
         <port polarity="Output" name="SF_CE0" />
         <port polarity="Output" name="FPGA_INIT_B" />
-        <port polarity="Output" name="Busy" />
         <port polarity="Input" name="Clk" />
+        <port polarity="Input" name="Res" />
         <blockdef name="DACWrite">
             <timestamp>2022-3-28T20:50:15</timestamp>
             <line x2="0" y1="-544" y2="-544" x1="64" />
@@ -80,12 +76,12 @@
             <line x2="112" y1="32" y2="32" x1="144" />
         </blockdef>
         <block symbolname="DACWrite" name="XLXI_4">
-            <blockpin name="Reset" />
-            <blockpin signalname="XLXN_1" name="Start" />
+            <blockpin signalname="Res" name="Reset" />
+            <blockpin signalname="XLXN_8" name="Start" />
             <blockpin signalname="SPI_MISO" name="SPI_MISO" />
             <blockpin signalname="XLXN_3(3:0)" name="Cmd(3:0)" />
             <blockpin signalname="XLXN_4(3:0)" name="Addr(3:0)" />
-            <blockpin signalname="XLXN_2(11:0)" name="DATA(11:0)" />
+            <blockpin signalname="XLXN_9(11:0)" name="DATA(11:0)" />
             <blockpin signalname="DAC_CLR" name="DAC_CLR" />
             <blockpin signalname="DAC_CS" name="DAC_CS" />
             <blockpin signalname="SPI_MOSI" name="SPI_MOSI" />
@@ -95,15 +91,15 @@
             <blockpin signalname="AD_CONV" name="AD_CONV" />
             <blockpin signalname="SF_CE0" name="SF_CE0" />
             <blockpin signalname="FPGA_INIT_B" name="FPGA_INIT_B" />
-            <blockpin signalname="Busy" name="Busy" />
+            <blockpin name="Busy" />
             <blockpin signalname="Clk" name="Clk_50MHz" />
             <blockpin signalname="Clk" name="Clk_Sys" />
         </block>
         <block symbolname="SawGenerator" name="XLXI_5">
             <blockpin signalname="Clk" name="Clk" />
             <blockpin signalname="XLXN_6(3:0)" name="Code(3:0)" />
-            <blockpin signalname="XLXN_1" name="Sample_Rdy" />
-            <blockpin signalname="XLXN_2(11:0)" name="Sample(11:0)" />
+            <blockpin signalname="XLXN_8" name="Sample_Rdy" />
+            <blockpin signalname="XLXN_9(11:0)" name="Sample(11:0)" />
         </block>
         <block symbolname="constant" name="XLXI_6">
             <attr value="3" name="CValue">
@@ -122,7 +118,7 @@
             <blockpin signalname="XLXN_4(3:0)" name="O" />
         </block>
         <block symbolname="constant" name="XLXI_8">
-            <attr value="1" name="CValue">
+            <attr value="2" name="CValue">
                 <trait delete="all:1 sym:0" />
                 <trait editname="all:1 sch:0" />
                 <trait valuetype="BitVector 32 Hexadecimal" />
@@ -173,22 +169,8 @@
             <wire x2="2368" y1="1328" y2="1328" x1="2336" />
         </branch>
         <iomarker fontsize="28" x="2368" y="1328" name="FPGA_INIT_B" orien="R0" />
-        <branch name="Busy">
-            <wire x2="2368" y1="1392" y2="1392" x1="2336" />
-        </branch>
-        <iomarker fontsize="28" x="2368" y="1392" name="Busy" orien="R0" />
         <instance x="992" y="1152" name="XLXI_5" orien="R0">
         </instance>
-        <branch name="XLXN_1">
-            <wire x2="1632" y1="1056" y2="1056" x1="1376" />
-            <wire x2="1632" y1="752" y2="1056" x1="1632" />
-            <wire x2="1888" y1="752" y2="752" x1="1632" />
-        </branch>
-        <branch name="XLXN_2(11:0)">
-            <wire x2="1648" y1="1120" y2="1120" x1="1376" />
-            <wire x2="1648" y1="944" y2="1120" x1="1648" />
-            <wire x2="1888" y1="944" y2="944" x1="1648" />
-        </branch>
         <instance x="1696" y="784" name="XLXI_6" orien="R0">
         </instance>
         <instance x="1696" y="864" name="XLXI_7" orien="R0">
@@ -217,5 +199,20 @@
         <iomarker fontsize="28" x="592" y="1056" name="Clk" orien="R180" />
         <instance x="736" y="1088" name="XLXI_8" orien="R0">
         </instance>
+        <branch name="Res">
+            <wire x2="1872" y1="1328" y2="1328" x1="576" />
+            <wire x2="1888" y1="1328" y2="1328" x1="1872" />
+        </branch>
+        <iomarker fontsize="28" x="576" y="1328" name="Res" orien="R180" />
+        <branch name="XLXN_8">
+            <wire x2="1632" y1="1056" y2="1056" x1="1376" />
+            <wire x2="1632" y1="752" y2="1056" x1="1632" />
+            <wire x2="1888" y1="752" y2="752" x1="1632" />
+        </branch>
+        <branch name="XLXN_9(11:0)">
+            <wire x2="1648" y1="1120" y2="1120" x1="1376" />
+            <wire x2="1648" y1="944" y2="1120" x1="1648" />
+            <wire x2="1888" y1="944" y2="944" x1="1648" />
+        </branch>
     </sheet>
 </drawing>

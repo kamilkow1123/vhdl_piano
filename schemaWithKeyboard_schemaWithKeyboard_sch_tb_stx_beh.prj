@@ -1,0 +1,5 @@
+vhdl isim_temp "VGAMapper.vhd"
+vhdl isim_temp "SawGenerator.vhd"
+vhdl isim_temp "KeyboardMapper.vhd"
+vhdl isim_temp "schemaWithKeyboard.vhf"
+vhdl isim_temp "SchemaWithKeyboardTest.vhd"

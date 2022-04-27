@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd";
+static const char *ng0 = "C:/Users/lab/Desktop/organs/SawGenerator.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_1242562249;
 
@@ -47,7 +47,7 @@ static void work_a_3323811708_3212880686_p_0(char *t0)
 LAB0:    xsi_set_current_line(56, ng0);
     t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7088);
+    t1 = (t0 + 6740);
     t4 = 1;
     if (4U == 4U)
         goto LAB5;
@@ -59,7 +59,7 @@ LAB7:    if (t4 != 0)
 
 LAB4:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7092);
+    t1 = (t0 + 6744);
     t4 = 1;
     if (4U == 4U)
         goto LAB13;
@@ -71,7 +71,7 @@ LAB15:    if (t4 != 0)
 
 LAB12:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7096);
+    t1 = (t0 + 6748);
     t4 = 1;
     if (4U == 4U)
         goto LAB21;
@@ -83,7 +83,7 @@ LAB23:    if (t4 != 0)
 
 LAB20:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7100);
+    t1 = (t0 + 6752);
     t4 = 1;
     if (4U == 4U)
         goto LAB29;
@@ -95,7 +95,7 @@ LAB31:    if (t4 != 0)
 
 LAB28:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7104);
+    t1 = (t0 + 6756);
     t4 = 1;
     if (4U == 4U)
         goto LAB37;
@@ -107,7 +107,7 @@ LAB39:    if (t4 != 0)
 
 LAB36:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7108);
+    t1 = (t0 + 6760);
     t4 = 1;
     if (4U == 4U)
         goto LAB45;
@@ -119,7 +119,7 @@ LAB47:    if (t4 != 0)
 
 LAB44:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7112);
+    t1 = (t0 + 6764);
     t4 = 1;
     if (4U == 4U)
         goto LAB53;
@@ -131,7 +131,7 @@ LAB55:    if (t4 != 0)
 
 LAB52:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7116);
+    t1 = (t0 + 6768);
     t4 = 1;
     if (4U == 4U)
         goto LAB61;
@@ -143,7 +143,7 @@ LAB63:    if (t4 != 0)
 
 LAB60:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7120);
+    t1 = (t0 + 6772);
     t4 = 1;
     if (4U == 4U)
         goto LAB69;
@@ -155,7 +155,7 @@ LAB71:    if (t4 != 0)
 
 LAB68:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7124);
+    t1 = (t0 + 6776);
     t4 = 1;
     if (4U == 4U)
         goto LAB77;
@@ -167,7 +167,7 @@ LAB79:    if (t4 != 0)
 
 LAB76:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7128);
+    t1 = (t0 + 6780);
     t4 = 1;
     if (4U == 4U)
         goto LAB85;
@@ -179,7 +179,7 @@ LAB87:    if (t4 != 0)
 
 LAB84:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7132);
+    t1 = (t0 + 6784);
     t4 = 1;
     if (4U == 4U)
         goto LAB93;
@@ -539,23 +539,23 @@ LAB4:
 LAB3:    xsi_set_current_line(99, ng0);
     t1 = (t0 + 1832U);
     t3 = *((char **)t1);
-    t1 = (t0 + 7136);
+    t1 = (t0 + 6788);
     t8 = ((IEEE_P_2592010699) + 4024);
-    t9 = (t0 + 7036U);
+    t9 = (t0 + 6688U);
     t10 = (t19 + 0U);
     t14 = (t10 + 0U);
     *((int *)t14) = 0;
     t14 = (t10 + 4U);
-    *((int *)t14) = 3;
+    *((int *)t14) = 6;
     t14 = (t10 + 8U);
     *((int *)t14) = 1;
-    t5 = (3 - 0);
+    t5 = (6 - 0);
     t16 = (t5 * 1);
     t16 = (t16 + 1);
     t14 = (t10 + 12U);
     *((unsigned int *)t14) = t16;
     t7 = xsi_base_array_concat(t7, t15, t8, (char)97, t3, t9, (char)97, t1, t19, (char)101);
-    t16 = (8U + 4U);
+    t16 = (5U + 7U);
     t2 = (12U != t16);
     if (t2 == 1)
         goto LAB13;
@@ -621,12 +621,12 @@ LAB5:    xsi_set_current_line(93, ng0);
     xsi_set_current_line(94, ng0);
     t1 = (t0 + 1832U);
     t3 = *((char **)t1);
-    t1 = (t0 + 7036U);
+    t1 = (t0 + 6688U);
     t4 = ieee_p_1242562249_sub_1919365254_1035706684(IEEE_P_1242562249, t15, t3, t1, 1);
     t7 = (t15 + 12U);
     t16 = *((unsigned int *)t7);
     t17 = (1U * t16);
-    t2 = (8U != t17);
+    t2 = (5U != t17);
     if (t2 == 1)
         goto LAB11;
 
@@ -635,7 +635,7 @@ LAB12:    t8 = (t0 + 4432);
     t10 = *((char **)t9);
     t14 = (t10 + 56U);
     t18 = *((char **)t14);
-    memcpy(t18, t4, 8U);
+    memcpy(t18, t4, 5U);
     xsi_driver_first_trans_fast(t8);
     xsi_set_current_line(95, ng0);
     t1 = (t0 + 4368);
@@ -654,7 +654,7 @@ LAB8:    t1 = (t0 + 2152U);
     t2 = t13;
     goto LAB10;
 
-LAB11:    xsi_size_not_matching(8U, t17, 0);
+LAB11:    xsi_size_not_matching(5U, t17, 0);
     goto LAB12;
 
 LAB13:    xsi_size_not_matching(12U, t16, 0);

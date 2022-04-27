@@ -1,0 +1,9 @@
+[Inputs]
+F0
+Clk
+Data_In_Ready
+=Code[3:0]=
+[Outputs]
+Char_Ready
+=Char_Out[7:0]=
+[BiDir]

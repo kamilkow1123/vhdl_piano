@@ -1,0 +1,2 @@
+vhdtdtfi -lib work VGAMapper.vhd -prj organs -o VGAMapper.spl -module VGAMapper -template D:/PROJEKTY/xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e VGAMapper.spl {C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/VGAMapper.sym} 

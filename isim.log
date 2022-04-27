@@ -1,5 +1,6 @@
 ISim log file
-Running: C:\Users\kamil\Desktop\STUDIA\VI SEMESTR\UCiSW2\organs\KeyboardMapperTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapperTest_isim_beh.wdb 
+Running: C:\Users\kamil\Desktop\STUDIA\VI SEMESTR\UCiSW2\ucisw26.04\organs\VGAMapperTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/VGAMapperTest_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.20131013 (signature 0x7708f090)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -28,6 +29,6 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 5.00us
+# run 3.00us
 # run all
-Stopped at time : 525243970 ns : File "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapperTest.vhd" Line 82
+Stopped at time : 375812470 ns : File "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/VGAMapperTest.vhd" Line 84

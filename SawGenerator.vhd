@@ -43,7 +43,7 @@ end SawGenerator;
 architecture Behavioral of SawGenerator is
 
 	SIGNAL Step_Counter : INTEGER := 0;
-	SIGNAL Sample_Counter : UNSIGNED(7 DOWNTO 0) := (OTHERS => '0');
+	SIGNAL Sample_Counter : UNSIGNED(4 DOWNTO 0) := (OTHERS => '0');
 	SIGNAL Cycle_Counter : INTEGER := 0;
 	
 	SIGNAL Cycles_Per_Step : INTEGER := 0; --clk cycles per one step
@@ -89,14 +89,14 @@ One_Step_Iteration : process(Clk, Sample_Counter)
 	if(rising_edge(Clk)) then
 		Cycle_Counter <= Cycle_Counter + 1;
 		Sample_Rdy <= '0';
-		if(Cycle_Counter = Cycles_Per_Step and Cycles_Per_Step /=0 ) then
+		if(Cycle_Counter >= Cycles_Per_Step and Cycles_Per_Step /=0 ) then
 			Cycle_Counter <= 0;
 			Sample_Counter <= Sample_Counter + 1;
 			Sample_Rdy <= '1';
 			end if;
 	end if;
 	
-	Sample <= STD_LOGIC_VECTOR(Sample_Counter) & x"0";
+	Sample <= STD_LOGIC_VECTOR(Sample_Counter) & "0000000";
 end process One_Step_Iteration;
 
 
@@ -104,7 +104,7 @@ Saw_Iteration : process(Clk)
 
 	begin
 	if(rising_edge(Clk)) then
-		 if(Step_Counter = 31) then
+		 if(Step_Counter >= 31) then
 			  Step_Counter <= 0;
 		 else
 			  Step_Counter <= Step_Counter + 1;
