@@ -122,3 +122,6 @@ map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schemaW
 par -w -intstyle ise -ol high -t 1 schemaWithKeyboard_map.ncd schemaWithKeyboard.ncd schemaWithKeyboard.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml schemaWithKeyboard.twx schemaWithKeyboard.ncd -o schemaWithKeyboard.twr schemaWithKeyboard.pcf -ucf ADC_DAC.ucf -ucf GenIO.ucf 
 bitgen -intstyle ise -f schemaWithKeyboard.ut schemaWithKeyboard.ncd 
+xst -intstyle ise -ifn "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.xst" -ofn "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ADC_DAC.ucf -uc GenIO.ucf -p xc3s500e-fg320-4 "schemaWithKeyboard.ngc" schemaWithKeyboard.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o schemaWithKeyboard_map.ncd schemaWithKeyboard.ngd schemaWithKeyboard.pcf 

@@ -21,10 +21,11 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/lab/Desktop/organs/SawGenerator.vhd";
+static const char *ng0 = "D:/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_1242562249;
 
+char *ieee_p_1242562249_sub_180853171_1035706684(char *, char *, int , int );
 char *ieee_p_1242562249_sub_1919365254_1035706684(char *, char *, char *, char *, int );
 unsigned char ieee_p_2592010699_sub_1744673427_503743352(char *, char *, unsigned int , unsigned int );
 
@@ -47,7 +48,7 @@ static void work_a_3323811708_3212880686_p_0(char *t0)
 LAB0:    xsi_set_current_line(56, ng0);
     t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6740);
+    t1 = (t0 + 6896);
     t4 = 1;
     if (4U == 4U)
         goto LAB5;
@@ -59,7 +60,7 @@ LAB7:    if (t4 != 0)
 
 LAB4:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6744);
+    t1 = (t0 + 6900);
     t4 = 1;
     if (4U == 4U)
         goto LAB13;
@@ -71,7 +72,7 @@ LAB15:    if (t4 != 0)
 
 LAB12:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6748);
+    t1 = (t0 + 6904);
     t4 = 1;
     if (4U == 4U)
         goto LAB21;
@@ -83,7 +84,7 @@ LAB23:    if (t4 != 0)
 
 LAB20:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6752);
+    t1 = (t0 + 6908);
     t4 = 1;
     if (4U == 4U)
         goto LAB29;
@@ -95,7 +96,7 @@ LAB31:    if (t4 != 0)
 
 LAB28:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6756);
+    t1 = (t0 + 6912);
     t4 = 1;
     if (4U == 4U)
         goto LAB37;
@@ -107,7 +108,7 @@ LAB39:    if (t4 != 0)
 
 LAB36:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6760);
+    t1 = (t0 + 6916);
     t4 = 1;
     if (4U == 4U)
         goto LAB45;
@@ -119,7 +120,7 @@ LAB47:    if (t4 != 0)
 
 LAB44:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6764);
+    t1 = (t0 + 6920);
     t4 = 1;
     if (4U == 4U)
         goto LAB53;
@@ -131,7 +132,7 @@ LAB55:    if (t4 != 0)
 
 LAB52:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6768);
+    t1 = (t0 + 6924);
     t4 = 1;
     if (4U == 4U)
         goto LAB61;
@@ -143,7 +144,7 @@ LAB63:    if (t4 != 0)
 
 LAB60:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6772);
+    t1 = (t0 + 6928);
     t4 = 1;
     if (4U == 4U)
         goto LAB69;
@@ -155,7 +156,7 @@ LAB71:    if (t4 != 0)
 
 LAB68:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6776);
+    t1 = (t0 + 6932);
     t4 = 1;
     if (4U == 4U)
         goto LAB77;
@@ -167,7 +168,7 @@ LAB79:    if (t4 != 0)
 
 LAB76:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6780);
+    t1 = (t0 + 6936);
     t4 = 1;
     if (4U == 4U)
         goto LAB85;
@@ -179,7 +180,7 @@ LAB87:    if (t4 != 0)
 
 LAB84:    t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6784);
+    t1 = (t0 + 6940);
     t4 = 1;
     if (4U == 4U)
         goto LAB93;
@@ -539,9 +540,9 @@ LAB4:
 LAB3:    xsi_set_current_line(99, ng0);
     t1 = (t0 + 1832U);
     t3 = *((char **)t1);
-    t1 = (t0 + 6788);
+    t1 = (t0 + 6944);
     t8 = ((IEEE_P_2592010699) + 4024);
-    t9 = (t0 + 6688U);
+    t9 = (t0 + 6844U);
     t10 = (t19 + 0U);
     t14 = (t10 + 0U);
     *((int *)t14) = 0;
@@ -598,7 +599,7 @@ LAB2:    xsi_set_current_line(90, ng0);
     t1 = (t0 + 2152U);
     t4 = *((char **)t1);
     t6 = *((int *)t4);
-    t11 = (t5 == t6);
+    t11 = (t5 >= t6);
     if (t11 == 1)
         goto LAB8;
 
@@ -621,7 +622,7 @@ LAB5:    xsi_set_current_line(93, ng0);
     xsi_set_current_line(94, ng0);
     t1 = (t0 + 1832U);
     t3 = *((char **)t1);
-    t1 = (t0 + 6688U);
+    t1 = (t0 + 6844U);
     t4 = ieee_p_1242562249_sub_1919365254_1035706684(IEEE_P_1242562249, t15, t3, t1, 1);
     t7 = (t15 + 12U);
     t16 = *((unsigned int *)t7);
@@ -664,6 +665,7 @@ LAB13:    xsi_size_not_matching(12U, t16, 0);
 
 static void work_a_3323811708_3212880686_p_2(char *t0)
 {
+    char t11[16];
     char *t1;
     unsigned char t2;
     char *t3;
@@ -674,7 +676,7 @@ static void work_a_3323811708_3212880686_p_2(char *t0)
     char *t8;
     char *t9;
     char *t10;
-    int t11;
+    int t12;
 
 LAB0:    xsi_set_current_line(106, ng0);
     t1 = (t0 + 992U);
@@ -691,21 +693,21 @@ LAB2:    xsi_set_current_line(107, ng0);
     t3 = (t0 + 1672U);
     t4 = *((char **)t3);
     t5 = *((int *)t4);
-    t6 = (t5 == 31);
+    t6 = (t5 >= 31);
     if (t6 != 0)
         goto LAB5;
 
-LAB7:    xsi_set_current_line(110, ng0);
+LAB7:    xsi_set_current_line(111, ng0);
     t1 = (t0 + 1672U);
     t3 = *((char **)t1);
     t5 = *((int *)t3);
-    t11 = (t5 + 1);
+    t12 = (t5 + 1);
     t1 = (t0 + 4560);
     t4 = (t1 + 56U);
     t7 = *((char **)t4);
     t8 = (t7 + 56U);
     t9 = *((char **)t8);
-    *((int *)t9) = t11;
+    *((int *)t9) = t12;
     xsi_driver_first_trans_fast(t1);
 
 LAB6:    goto LAB3;
@@ -718,7 +720,23 @@ LAB5:    xsi_set_current_line(108, ng0);
     t10 = *((char **)t9);
     *((int *)t10) = 0;
     xsi_driver_first_trans_fast(t3);
+    xsi_set_current_line(109, ng0);
+    t1 = ieee_p_1242562249_sub_180853171_1035706684(IEEE_P_1242562249, t11, 0, 5);
+    t2 = (5U != 5U);
+    if (t2 == 1)
+        goto LAB8;
+
+LAB9:    t3 = (t0 + 4624);
+    t4 = (t3 + 56U);
+    t7 = *((char **)t4);
+    t8 = (t7 + 56U);
+    t9 = *((char **)t8);
+    memcpy(t9, t1, 5U);
+    xsi_driver_first_trans_fast(t3);
     goto LAB6;
+
+LAB8:    xsi_size_not_matching(5U, 5U, 0);
+    goto LAB9;
 
 }
 

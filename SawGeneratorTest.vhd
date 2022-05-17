@@ -59,7 +59,7 @@ ARCHITECTURE behavior OF SawGeneratorTest IS
    signal Sample_Rdy : std_logic;
 
    -- Clock period definitions
-   constant Clk_Half_Period : time := 10 ns;
+   constant Clk_Half_Period : time := 20 ns;
  
 BEGIN
 

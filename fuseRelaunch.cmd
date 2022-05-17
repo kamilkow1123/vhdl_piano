@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/VGAMapperTest_isim_beh.exe" -prj "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/VGAMapperTest_beh.prj" "work.VGAMapperTest" 
+-intstyle "ise" -incremental -o "D:/STUDIA/VI SEMESTR/UCiSW2/organs/VGAMapperTest_isim_beh.exe" -prj "D:/STUDIA/VI SEMESTR/UCiSW2/organs/VGAMapperTest_beh.prj" "work.VGAMapperTest" 

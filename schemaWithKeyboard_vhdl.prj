@@ -1,3 +1,4 @@
-vhdl work "C:\Users\lab\Desktop\organs\SawGenerator.vhd"
-vhdl work "C:\Users\lab\Desktop\organs\KeyboardMapper.vhd"
-vhdl work "C:\Users\lab\Desktop\organs\schemaWithKeyboard.vhf"
+vhdl work "D:\STUDIA\VI SEMESTR\UCiSW2\organs\VGAMapper.vhd"
+vhdl work "D:\STUDIA\VI SEMESTR\UCiSW2\organs\SawGenerator.vhd"
+vhdl work "D:\STUDIA\VI SEMESTR\UCiSW2\organs\KeyboardMapper.vhd"
+vhdl work "D:\STUDIA\VI SEMESTR\UCiSW2\organs\schemaWithKeyboard.vhf"

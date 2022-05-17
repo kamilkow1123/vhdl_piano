@@ -34,7 +34,9 @@
     <file xil_pn:fileType="FILE_XST" xil_pn:name="SawGenerator.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SawGeneratorTest2_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SawGeneratorTest2_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SawGeneratorTest_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SawGeneratorTest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="SawGeneratorTest_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SawGeneratorTest_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SawGenerator_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SawGenerator_stx_beh.prj"/>
@@ -164,24 +166,27 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1651087344" xil_pn:in_ck="-2437832847648668948" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1651087344">
+    <transform xil_pn:end_ts="1652818994" xil_pn:in_ck="4137573732976514232" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1652818994">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="KeyboardMapper.vhd"/>
       <outfile xil_pn:name="KeyboardMapperTest.vhd"/>
       <outfile xil_pn:name="SawGenerator.vhd"/>
       <outfile xil_pn:name="SawGeneratorTest.vhd"/>
-      <outfile xil_pn:name="SawGeneratorTest2.vhd"/>
       <outfile xil_pn:name="SchemaTest3.vhd"/>
       <outfile xil_pn:name="SchemaWithKeyboardTest.vhd"/>
       <outfile xil_pn:name="VGAMapper.vhd"/>
       <outfile xil_pn:name="VGAMapperTest.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1651086935" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2229507785599029977" xil_pn:start_ts="1651086935">
+    <transform xil_pn:end_ts="1652819004" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2229507785599029977" xil_pn:start_ts="1652819004">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1651086936" xil_pn:in_ck="6767188708145579015" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2975739460471919333" xil_pn:start_ts="1651086935">
+    <transform xil_pn:end_ts="1652819006" xil_pn:in_ck="6767188708145579015" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2975739460471919333" xil_pn:start_ts="1652819004">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="schema.vhf"/>
@@ -191,14 +196,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1651087347" xil_pn:in_ck="-3362068878182428097" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1651087347">
+    <transform xil_pn:end_ts="1652819006" xil_pn:in_ck="-6234161882825190389" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1652819006">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="KeyboardMapper.vhd"/>
       <outfile xil_pn:name="KeyboardMapperTest.vhd"/>
       <outfile xil_pn:name="SawGenerator.vhd"/>
       <outfile xil_pn:name="SawGeneratorTest.vhd"/>
-      <outfile xil_pn:name="SawGeneratorTest2.vhd"/>
       <outfile xil_pn:name="SchemaTest3.vhd"/>
       <outfile xil_pn:name="SchemaWithKeyboardTest.vhd"/>
       <outfile xil_pn:name="VGAMapper.vhd"/>
@@ -206,10 +215,13 @@
       <outfile xil_pn:name="schema.vhf"/>
       <outfile xil_pn:name="schemaWithKeyboard.vhf"/>
     </transform>
-    <transform xil_pn:end_ts="1651087349" xil_pn:in_ck="-3362068878182428097" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2028212720686715564" xil_pn:start_ts="1651087347">
+    <transform xil_pn:end_ts="1652819008" xil_pn:in_ck="-6234161882825190389" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2028212720686715564" xil_pn:start_ts="1652819006">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="VGAMapperTest_beh.prj"/>
       <outfile xil_pn:name="VGAMapperTest_isim_beh.exe"/>
@@ -218,9 +230,10 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1651087363" xil_pn:in_ck="-8805058699027665398" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6239430125902773983" xil_pn:start_ts="1651087363">
+    <transform xil_pn:end_ts="1652819009" xil_pn:in_ck="-7285412141310628087" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6239430125902773983" xil_pn:start_ts="1652819008">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="VGAMapperTest_isim_beh.wdb"/>
@@ -231,13 +244,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1650527975" xil_pn:in_ck="6767188708145579015" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5764478972655430317" xil_pn:start_ts="1650527973">
+    <transform xil_pn:end_ts="1652820381" xil_pn:in_ck="6767188708145579015" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5764478972655430317" xil_pn:start_ts="1652820380">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="schema.vhf"/>
       <outfile xil_pn:name="schemaWithKeyboard.vhf"/>
     </transform>
@@ -256,23 +265,15 @@
     <transform xil_pn:end_ts="1650525698" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1650525698">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1650525698" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6987080015562946813" xil_pn:start_ts="1650525698">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1650528468" xil_pn:in_ck="5078451337994503355" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-4426296241963869968" xil_pn:start_ts="1650528461">
+    <transform xil_pn:end_ts="1652820390" xil_pn:in_ck="-2604421830519188530" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-4426296241963869968" xil_pn:start_ts="1652820381">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="schemaWithKeyboard.jhd"/>
@@ -292,24 +293,20 @@
     <transform xil_pn:end_ts="1650527982" xil_pn:in_ck="1791089808375077529" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1746919923173222272" xil_pn:start_ts="1650527982">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1650528473" xil_pn:in_ck="-7172053834587549548" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4689934406395160160" xil_pn:start_ts="1650528468">
+    <transform xil_pn:end_ts="1652820394" xil_pn:in_ck="-7172053834587549548" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4689934406395160160" xil_pn:start_ts="1652820390">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="schemaWithKeyboard.bld"/>
       <outfile xil_pn:name="schemaWithKeyboard.ngd"/>
       <outfile xil_pn:name="schemaWithKeyboard_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1650528476" xil_pn:in_ck="-4928189741657773858" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1650528473">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1652820396" xil_pn:in_ck="4046330566157791062" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1652820394">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="schemaWithKeyboard.pcf"/>
       <outfile xil_pn:name="schemaWithKeyboard_map.map"/>
@@ -342,6 +339,8 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="schemaWithKeyboard.ut"/>
       <outfile xil_pn:name="schemawithkeyboard.bgn"/>
@@ -351,9 +350,10 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
     <transform xil_pn:end_ts="1650528504" xil_pn:in_ck="-6289387854823709941" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1650528503">
-      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForced"/>
     </transform>
     <transform xil_pn:end_ts="1650528486" xil_pn:in_ck="-4928189741657773990" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1650528483">
       <status xil_pn:value="SuccessfullyRun"/>

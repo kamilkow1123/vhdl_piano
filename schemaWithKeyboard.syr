@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> Reading design: schemaWithKeyboard.prj
 
@@ -104,13 +104,24 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/lab/Desktop/organs/KeyboardMapper.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/schemaWithKeyboard is now defined in a different file.  It was defined in "C:/Users/lab/Desktop/organs/schemaWithKeyboard.vhf", and is now defined in "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf".
+WARNING:HDLParsers:3607 - Unit work/schemaWithKeyboard/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/lab/Desktop/organs/schemaWithKeyboard.vhf", and is now defined in "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf".
+WARNING:HDLParsers:3607 - Unit work/KeyboardMapper is now defined in a different file.  It was defined in "C:/Users/lab/Desktop/organs/KeyboardMapper.vhd", and is now defined in "D:/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd".
+WARNING:HDLParsers:3607 - Unit work/KeyboardMapper/Behavioral is now defined in a different file.  It was defined in "C:/Users/lab/Desktop/organs/KeyboardMapper.vhd", and is now defined in "D:/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd".
+WARNING:HDLParsers:3607 - Unit work/SawGenerator is now defined in a different file.  It was defined in "C:/Users/lab/Desktop/organs/SawGenerator.vhd", and is now defined in "D:/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd".
+WARNING:HDLParsers:3607 - Unit work/SawGenerator/Behavioral is now defined in a different file.  It was defined in "C:/Users/lab/Desktop/organs/SawGenerator.vhd", and is now defined in "D:/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd".
+WARNING:HDLParsers:3607 - Unit work/VGAMapper is now defined in a different file.  It was defined in "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/VGAMapper.vhd", and is now defined in "D:/STUDIA/VI SEMESTR/UCiSW2/organs/VGAMapper.vhd".
+WARNING:HDLParsers:3607 - Unit work/VGAMapper/Behavioral is now defined in a different file.  It was defined in "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/VGAMapper.vhd", and is now defined in "D:/STUDIA/VI SEMESTR/UCiSW2/organs/VGAMapper.vhd".
+Compiling vhdl file "D:/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" in Library work.
 Architecture behavioral of Entity keyboardmapper is up to date.
-Compiling vhdl file "C:/Users/lab/Desktop/organs/SawGenerator.vhd" in Library work.
+Compiling vhdl file "D:/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" in Library work.
 Entity <sawgenerator> compiled.
 Entity <sawgenerator> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/lab/Desktop/organs/schemaWithKeyboard.vhf" in Library work.
-Architecture behavioral of Entity schemawithkeyboard is up to date.
+Compiling vhdl file "D:/STUDIA/VI SEMESTR/UCiSW2/organs/VGAMapper.vhd" in Library work.
+Architecture behavioral of Entity vgamapper is up to date.
+Compiling vhdl file "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" in Library work.
+Entity <schemawithkeyboard> compiled.
+Entity <schemawithkeyboard> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -121,13 +132,17 @@ Analyzing hierarchy for entity <KeyboardMapper> in library <work> (architecture 
 
 Analyzing hierarchy for entity <SawGenerator> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <VGAMapper> in library <work> (architecture <behavioral>).
+
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <schemaWithKeyboard> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2211 - "C:/Users/lab/Desktop/organs/schemaWithKeyboard.vhf" line 109: Instantiating black box module <PS2_Kbd>.
-WARNING:Xst:2211 - "C:/Users/lab/Desktop/organs/schemaWithKeyboard.vhf" line 133: Instantiating black box module <DACWrite>.
+WARNING:Xst:2211 - "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" line 156: Instantiating black box module <PS2_Kbd>.
+WARNING:Xst:2211 - "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" line 180: Instantiating black box module <DACWrite>.
+WARNING:Xst:753 - "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" line 200: Unconnected output port 'Busy' of component 'VGAtxt48x20'.
+WARNING:Xst:2211 - "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" line 200: Instantiating black box module <VGAtxt48x20>.
 Entity <schemaWithKeyboard> analyzed. Unit <schemaWithKeyboard> generated.
 
 Analyzing Entity <KeyboardMapper> in library <work> (Architecture <behavioral>).
@@ -135,6 +150,9 @@ Entity <KeyboardMapper> analyzed. Unit <KeyboardMapper> generated.
 
 Analyzing Entity <SawGenerator> in library <work> (Architecture <behavioral>).
 Entity <SawGenerator> analyzed. Unit <SawGenerator> generated.
+
+Analyzing Entity <VGAMapper> in library <work> (Architecture <behavioral>).
+Entity <VGAMapper> analyzed. Unit <VGAMapper> generated.
 
 
 =========================================================================
@@ -144,7 +162,7 @@ Entity <SawGenerator> analyzed. Unit <SawGenerator> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <KeyboardMapper>.
-    Related source file is "C:/Users/lab/Desktop/organs/KeyboardMapper.vhd".
+    Related source file is "D:/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd".
 WARNING:Xst:647 - Input <E0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Using one-hot encoding for signal <State>.
     Found 13-bit register for signal <State>.
@@ -154,7 +172,7 @@ Unit <KeyboardMapper> synthesized.
 
 
 Synthesizing Unit <SawGenerator>.
-    Related source file is "C:/Users/lab/Desktop/organs/SawGenerator.vhd".
+    Related source file is "D:/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd".
     Found 16x11-bit ROM for signal <Cycles_Per_Step>.
     Found 1-bit register for signal <Sample_Rdy>.
     Found 32-bit up counter for signal <Cycle_Counter>.
@@ -170,8 +188,23 @@ Synthesizing Unit <SawGenerator>.
 Unit <SawGenerator> synthesized.
 
 
+Synthesizing Unit <VGAMapper>.
+    Related source file is "D:/STUDIA/VI SEMESTR/UCiSW2/organs/VGAMapper.vhd".
+    Using one-hot encoding for signal <State>.
+    Found 13-bit register for signal <State>.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+Unit <VGAMapper> synthesized.
+
+
 Synthesizing Unit <schemaWithKeyboard>.
-    Related source file is "C:/Users/lab/Desktop/organs/schemaWithKeyboard.vhf".
+    Related source file is "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf".
+WARNING:Xst:653 - Signal <XLXI_7_ScrollEn_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_7_ScrollClear_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_7_NewLine_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_7_Home_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_7_Goto00_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_7_CursorOn_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <schemaWithKeyboard> synthesized.
 
 
@@ -184,9 +217,9 @@ Macro Statistics
 # Counters                                             : 2
  32-bit up counter                                     : 1
  5-bit up counter                                      : 1
-# Registers                                            : 2
+# Registers                                            : 3
  1-bit register                                        : 1
- 13-bit register                                       : 1
+ 13-bit register                                       : 2
 # Comparators                                          : 1
  32-bit comparator greatequal                          : 1
 
@@ -198,8 +231,10 @@ Macro Statistics
 
 Reading core <PS2_Kbd.ngc>.
 Reading core <DACWrite.ngc>.
+Reading core <VGAtxt48x20.ngc>.
 Loading core <PS2_Kbd> for timing and area information for instance <XLXI_1>.
 Loading core <DACWrite> for timing and area information for instance <XLXI_4>.
+Loading core <VGAtxt48x20> for timing and area information for instance <XLXI_7>.
 WARNING:Xst:2677 - Node <State_0> of sequential type is unconnected in block <XLXI_2>.
 WARNING:Xst:2677 - Node <State_0> of sequential type is unconnected in block <KeyboardMapper>.
 
@@ -212,8 +247,8 @@ Macro Statistics
 # Counters                                             : 2
  32-bit up counter                                     : 1
  5-bit up counter                                      : 1
-# Registers                                            : 13
- Flip-Flops                                            : 13
+# Registers                                            : 26
+ Flip-Flops                                            : 26
 # Comparators                                          : 1
  32-bit comparator greatequal                          : 1
 
@@ -229,9 +264,11 @@ Optimizing unit <KeyboardMapper> ...
 
 Optimizing unit <SawGenerator> ...
 
+Optimizing unit <VGAMapper> ...
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block schemaWithKeyboard, actual ratio is 2.
+Found area constraint ratio of 100 (+ 5) on block schemaWithKeyboard, actual ratio is 5.
 
 Final Macro Processing ...
 
@@ -239,8 +276,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 50
- Flip-Flops                                            : 50
+# Registers                                            : 63
+ Flip-Flops                                            : 63
 
 =========================================================================
 
@@ -266,36 +303,51 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 19
+# IOs                              : 24
 
 Cell Usage :
-# BELS                             : 276
-#      GND                         : 3
-#      INV                         : 11
-#      LUT1                        : 38
-#      LUT2                        : 28
-#      LUT2_L                      : 2
-#      LUT3                        : 35
-#      LUT3_D                      : 1
-#      LUT3_L                      : 1
-#      LUT4                        : 50
-#      LUT4_D                      : 5
-#      LUT4_L                      : 3
-#      MUXCY                       : 55
-#      MUXF5                       : 1
-#      VCC                         : 3
-#      XORCY                       : 40
-# FlipFlops/Latches                : 142
-#      FD                          : 18
-#      FDE                         : 74
-#      FDR                         : 39
-#      FDRE                        : 9
+# BELS                             : 666
+#      AND2                        : 1
+#      AND3                        : 4
+#      AND3B1                      : 4
+#      BUF                         : 3
+#      GND                         : 4
+#      INV                         : 20
+#      LUT1                        : 81
+#      LUT2                        : 61
+#      LUT2_D                      : 1
+#      LUT2_L                      : 4
+#      LUT3                        : 66
+#      LUT3_D                      : 6
+#      LUT3_L                      : 2
+#      LUT4                        : 152
+#      LUT4_D                      : 10
+#      LUT4_L                      : 9
+#      MUXCY                       : 108
+#      MUXF5                       : 21
+#      MUXF5_L                     : 2
+#      MUXF6                       : 6
+#      OR2                         : 5
+#      VCC                         : 4
+#      XOR2                        : 1
+#      XORCY                       : 91
+# FlipFlops/Latches                : 253
+#      FD                          : 53
+#      FDE                         : 100
+#      FDR                         : 53
+#      FDRE                        : 44
 #      FDRSE                       : 2
+#      FDSE                        : 1
+# RAMS                             : 2
+#      RAMB16_S9                   : 1
+#      RAMB16_S9_S9                : 1
+# Shift Registers                  : 3
+#      SRL16                       : 3
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 18
+# IO Buffers                       : 23
 #      IBUF                        : 4
-#      OBUF                        : 14
+#      OBUF                        : 19
 =========================================================================
 
 Device utilization summary:
@@ -303,11 +355,14 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      107  out of   4656     2%  
- Number of Slice Flip Flops:            142  out of   9312     1%  
- Number of 4 input LUTs:                174  out of   9312     1%  
- Number of IOs:                          19
- Number of bonded IOBs:                  19  out of    232     8%  
+ Number of Slices:                      244  out of   4656     5%  
+ Number of Slice Flip Flops:            253  out of   9312     2%  
+ Number of 4 input LUTs:                415  out of   9312     4%  
+    Number used as logic:               412
+    Number used as Shift registers:       3
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    232    10%  
+ Number of BRAMs:                         2  out of     20    10%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -331,7 +386,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Clk                                | BUFGP                  | 142   |
+Clk                                | BUFGP                  | 258   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -342,10 +397,10 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 11.226ns (Maximum Frequency: 89.081MHz)
+   Minimum period: 11.053ns (Maximum Frequency: 90.475MHz)
    Minimum input arrival time before clock: 4.076ns
-   Maximum output required time after clock: 7.278ns
-   Maximum combinational path delay: 7.150ns
+   Maximum output required time after clock: 7.322ns
+   Maximum combinational path delay: 7.187ns
 
 Timing Detail:
 --------------
@@ -353,26 +408,25 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
-  Clock period: 11.226ns (frequency: 89.081MHz)
-  Total number of paths / destination ports: 13452 / 257
+  Clock period: 11.053ns (frequency: 90.475MHz)
+  Total number of paths / destination ports: 16439 / 526
 -------------------------------------------------------------------------
-Delay:               11.226ns (Levels of Logic = 22)
-  Source:            XLXI_2/State_10 (FF)
+Delay:               11.053ns (Levels of Logic = 21)
+  Source:            XLXI_2/State_6 (FF)
   Destination:       XLXI_3/Cycle_Counter_31 (FF)
   Source Clock:      Clk rising
   Destination Clock: Clk rising
 
-  Data Path: XLXI_2/State_10 to XLXI_3/Cycle_Counter_31
+  Data Path: XLXI_2/State_6 to XLXI_3/Cycle_Counter_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.591   0.622  XLXI_2/State_10 (XLXI_2/State_10)
-     LUT3:I0->O            1   0.704   0.424  XLXI_2/Temp_Code<1>_SW0 (N14)
-     LUT4:I3->O           12   0.704   1.136  XLXI_2/Temp_Code<1> (Code_Out_1_OBUF)
-     LUT4:I0->O            1   0.704   0.499  XLXI_3/Mrom_Cycles_Per_Step11 (XLXI_3/Cycles_Per_Step<0>)
-     LUT2:I1->O            1   0.704   0.000  XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<0> (XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<0>)
-     MUXCY:S->O            1   0.464   0.000  XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<0> (XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<0>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1> (XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1>)
+     FDE:C->Q              2   0.591   0.622  XLXI_2/State_6 (XLXI_2/State_6)
+     LUT2:I0->O            2   0.704   0.451  XLXI_2/Temp_Code<2>_SW0 (N18)
+     LUT4_D:I3->O          9   0.704   0.995  XLXI_2/Temp_Code<2>_1 (XLXI_2/Temp_Code<2>)
+     LUT4:I0->O            1   0.704   0.499  XLXI_3/Mrom_Cycles_Per_Step111 (XLXI_3/Cycles_Per_Step<1>)
+     LUT2:I1->O            1   0.704   0.000  XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<1> (XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1> (XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<1>)
      MUXCY:CI->O           1   0.059   0.000  XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<2> (XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<2>)
      MUXCY:CI->O           1   0.059   0.000  XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<3> (XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<3>)
      MUXCY:CI->O           1   0.059   0.000  XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<4> (XLXI_3/Mcompar_Cycle_Counter_cmp_ge0000_cy<4>)
@@ -391,8 +445,8 @@ Delay:               11.226ns (Levels of Logic = 22)
      LUT4:I3->O           37   0.704   1.264  XLXI_3/Cycle_Counter_and00001 (XLXI_3/Cycle_Counter_and0000)
      FDR:R                     0.911          XLXI_3/Cycle_Counter_0
     ----------------------------------------
-    Total                     11.226ns (6.830ns logic, 4.396ns route)
-                                       (60.8% logic, 39.2% route)
+    Total                     11.053ns (6.771ns logic, 4.282ns route)
+                                       (61.3% logic, 38.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
@@ -417,30 +471,30 @@ Offset:              4.076ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
-  Total number of paths / destination ports: 25 / 7
+  Total number of paths / destination ports: 30 / 12
 -------------------------------------------------------------------------
-Offset:              7.278ns (Levels of Logic = 3)
-  Source:            XLXI_2/State_10 (FF)
-  Destination:       Code_Out<1> (PAD)
+Offset:              7.322ns (Levels of Logic = 3)
+  Source:            XLXI_2/State_7 (FF)
+  Destination:       Code_Out<0> (PAD)
   Source Clock:      Clk rising
 
-  Data Path: XLXI_2/State_10 to Code_Out<1>
+  Data Path: XLXI_2/State_7 to Code_Out<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.591   0.622  XLXI_2/State_10 (XLXI_2/State_10)
-     LUT3:I0->O            1   0.704   0.424  XLXI_2/Temp_Code<1>_SW0 (N14)
-     LUT4:I3->O           12   0.704   0.961  XLXI_2/Temp_Code<1> (Code_Out_1_OBUF)
-     OBUF:I->O                 3.272          Code_Out_1_OBUF (Code_Out<1>)
+     FDE:C->Q              4   0.591   0.666  XLXI_2/State_7 (XLXI_2/State_7)
+     LUT3_D:I1->O          1   0.704   0.424  XLXI_2/Temp_Code<0>_SW0 (N22)
+     LUT4:I3->O           12   0.704   0.961  XLXI_2/Temp_Code<0> (Code_Out_0_OBUF)
+     OBUF:I->O                 3.272          Code_Out_0_OBUF (Code_Out<0>)
     ----------------------------------------
-    Total                      7.278ns (5.271ns logic, 2.007ns route)
-                                       (72.4% logic, 27.6% route)
+    Total                      7.322ns (5.271ns logic, 2.051ns route)
+                                       (72.0% logic, 28.0% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               7.150ns (Levels of Logic = 4)
+Delay:               7.187ns (Levels of Logic = 4)
   Source:            Clk (PAD)
   Destination:       SPI_SCK (PAD)
 
@@ -448,26 +502,26 @@ Delay:               7.150ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     BUFGP:I->O          143   1.457   1.297  Clk_BUFGP (Clk_BUFGP)
+     BUFGP:I->O          260   1.457   1.334  Clk_BUFGP (Clk_BUFGP)
      begin scope: 'XLXI_4'
      INV:I->O              1   0.704   0.420  SPI_SCK1_INV_0 (SPI_SCK)
      end scope: 'XLXI_4'
      OBUF:I->O                 3.272          SPI_SCK_OBUF (SPI_SCK)
     ----------------------------------------
-    Total                      7.150ns (5.433ns logic, 1.717ns route)
-                                       (76.0% logic, 24.0% route)
+    Total                      7.187ns (5.433ns logic, 1.754ns route)
+                                       (75.6% logic, 24.4% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.75 secs
+Total CPU time to Xst completion: 5.85 secs
  
 --> 
 
-Total memory usage is 4515452 kilobytes
+Total memory usage is 4531760 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    5 (   0 filtered)
+Number of warnings :   21 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

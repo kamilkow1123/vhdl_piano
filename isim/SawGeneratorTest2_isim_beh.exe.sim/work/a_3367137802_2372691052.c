@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/lab/Desktop/organs/SawGeneratorTest2.vhd";
+static const char *ng0 = "D:/STUDIA/VI SEMESTR/UCiSW2/organs/SawGeneratorTest2.vhd";
 
 
 
@@ -112,7 +112,7 @@ LAB0:    t1 = (t0 + 3040U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(84, ng0);
-    t2 = (t0 + 5876);
+    t2 = (t0 + 5956);
     t4 = (t0 + 3736);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -129,7 +129,7 @@ LAB6:    *((char **)t1) = &&LAB7;
 
 LAB1:    return;
 LAB4:    xsi_set_current_line(86, ng0);
-    t2 = (t0 + 5880);
+    t2 = (t0 + 5960);
     t4 = (t0 + 3736);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -150,7 +150,7 @@ LAB5:    goto LAB4;
 LAB7:    goto LAB5;
 
 LAB8:    xsi_set_current_line(88, ng0);
-    t2 = (t0 + 5884);
+    t2 = (t0 + 5964);
     t4 = (t0 + 3736);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -171,7 +171,7 @@ LAB9:    goto LAB8;
 LAB11:    goto LAB9;
 
 LAB12:    xsi_set_current_line(90, ng0);
-    t2 = (t0 + 5888);
+    t2 = (t0 + 5968);
     t4 = (t0 + 3736);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -192,7 +192,7 @@ LAB13:    goto LAB12;
 LAB15:    goto LAB13;
 
 LAB16:    xsi_set_current_line(92, ng0);
-    t2 = (t0 + 5892);
+    t2 = (t0 + 5972);
     t4 = (t0 + 3736);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -213,7 +213,7 @@ LAB17:    goto LAB16;
 LAB19:    goto LAB17;
 
 LAB20:    xsi_set_current_line(94, ng0);
-    t2 = (t0 + 5896);
+    t2 = (t0 + 5976);
     t4 = (t0 + 3736);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -234,7 +234,7 @@ LAB21:    goto LAB20;
 LAB23:    goto LAB21;
 
 LAB24:    xsi_set_current_line(96, ng0);
-    t2 = (t0 + 5900);
+    t2 = (t0 + 5980);
     t4 = (t0 + 3736);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -255,7 +255,7 @@ LAB25:    goto LAB24;
 LAB27:    goto LAB25;
 
 LAB28:    xsi_set_current_line(98, ng0);
-    t2 = (t0 + 5904);
+    t2 = (t0 + 5984);
     t4 = (t0 + 3736);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);

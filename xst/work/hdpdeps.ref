@@ -1,24 +1,10 @@
-V3 23
+V3 30
 FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" 2022/04/02.16:48:49 P.20131013
 FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" 2022/03/28.22:28:43 P.20131013
 FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" 2022/04/02.17:30:52 P.20131013
 FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/VGAMapper.vhd" 2022/04/26.21:49:43 P.20131013
-EN work/VGAMapper 1651002586 \
-      FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/VGAMapper.vhd" \
-      PB ieee/std_logic_1164 1381692176
-AR work/VGAMapper/Behavioral 1651002587 \
-      FL "C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/VGAMapper.vhd" \
-      EN work/VGAMapper 1651002586
 FL C:/Users/lab/Desktop/organs/KeyboardMapper.vhd 2022/04/02.16:48:50 P.20131013
-EN work/KeyboardMapper 1650528463 \
-      FL C:/Users/lab/Desktop/organs/KeyboardMapper.vhd PB ieee/std_logic_1164 1381692176
-AR work/KeyboardMapper/Behavioral 1650528464 \
-      FL C:/Users/lab/Desktop/organs/KeyboardMapper.vhd EN work/KeyboardMapper 1650528463
 FL C:/Users/lab/Desktop/organs/SawGenerator.vhd 2022/04/21.10:07:38 P.20131013
-EN work/SawGenerator 1650528465 FL C:/Users/lab/Desktop/organs/SawGenerator.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/SawGenerator/Behavioral 1650528466 \
-      FL C:/Users/lab/Desktop/organs/SawGenerator.vhd EN work/SawGenerator 1650528465
 FL C:/Users/lab/Desktop/organs/schema.vhf 2022/04/21.09:18:26 P.20131013
 EN work/schema 1650525511 FL C:/Users/lab/Desktop/organs/schema.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
@@ -27,11 +13,32 @@ AR work/schema/BEHAVIORAL 1650525512 \
       FL C:/Users/lab/Desktop/organs/schema.vhf EN work/schema 1650525511 \
       CP DACWrite CP SawGenerator
 FL C:/Users/lab/Desktop/organs/schemaWithKeyboard.vhf 2022/04/21.09:59:34 P.20131013
-EN work/schemaWithKeyboard 1650528467 \
-      FL C:/Users/lab/Desktop/organs/schemaWithKeyboard.vhf \
+FL "D:/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" 2022/04/02.16:48:50 P.20131013
+EN work/KeyboardMapper 1652820384 \
+      FL "D:/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/KeyboardMapper/Behavioral 1652820385 \
+      FL "D:/STUDIA/VI SEMESTR/UCiSW2/organs/KeyboardMapper.vhd" \
+      EN work/KeyboardMapper 1652820384
+FL "D:/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" 2022/05/17.21:24:02 P.20131013
+EN work/SawGenerator 1652820386 \
+      FL "D:/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/SawGenerator/Behavioral 1652820387 \
+      FL "D:/STUDIA/VI SEMESTR/UCiSW2/organs/SawGenerator.vhd" \
+      EN work/SawGenerator 1652820386
+FL "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" 2022/04/27.21:05:09 P.20131013
+EN work/schemaWithKeyboard 1652820390 \
+      FL "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/schemaWithKeyboard/BEHAVIORAL 1650528468 \
-      FL C:/Users/lab/Desktop/organs/schemaWithKeyboard.vhf \
-      EN work/schemaWithKeyboard 1650528467 CP PS2_Kbd CP KeyboardMapper \
-      CP SawGenerator CP DACWrite
+AR work/schemaWithKeyboard/BEHAVIORAL 1652820391 \
+      FL "D:/STUDIA/VI SEMESTR/UCiSW2/organs/schemaWithKeyboard.vhf" \
+      EN work/schemaWithKeyboard 1652820390 CP PS2_Kbd CP KeyboardMapper \
+      CP SawGenerator CP DACWrite CP VGAtxt48x20 CP BUF CP VGAMapper
+FL "D:/STUDIA/VI SEMESTR/UCiSW2/organs/VGAMapper.vhd" 2022/04/26.21:49:43 P.20131013
+EN work/VGAMapper 1652820388 \
+      FL "D:/STUDIA/VI SEMESTR/UCiSW2/organs/VGAMapper.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/VGAMapper/Behavioral 1652820389 \
+      FL "D:/STUDIA/VI SEMESTR/UCiSW2/organs/VGAMapper.vhd" EN work/VGAMapper 1652820388

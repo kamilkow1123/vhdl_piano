@@ -2,14 +2,14 @@ Command line:
    VGAMapperTest_isim_beh.exe
      -simmode  gui
      -simrunnum  1
-     -socket  53175
+     -socket  61323
 
-Wed Apr 27 21:22:44 2022
+Tue May 17 22:23:30 2022
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 5151.14 Meg
+ Current Memory Usage: 5151.57 Meg
 
  Total Signals          : 15
  Total Nets             : 26
@@ -21,9 +21,9 @@ Wed Apr 27 21:22:44 2022
  Total Scalar Nets and Variables : 387
 Total Line Count : 72
 
- Total Simulation Time: 9.9375 sec
+ Total Simulation Time: 0.03125 sec
 
- Current Memory Usage: 4679.28 Meg
+ Current Memory Usage: 4994.28 Meg
 
-Wed Apr 27 21:26:02 2022
+Tue May 17 22:25:17 2022
 

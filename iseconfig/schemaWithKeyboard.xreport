@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-04-27T20:59:53</DateModified>
+  <DateModified>2022-05-17T18:27:25</DateModified>
   <ModuleName>schemaWithKeyboard</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs/iseconfig/schemaWithKeyboard.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/kamil/Desktop/STUDIA/VI SEMESTR/UCiSW2/ucisw26.04/organs\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/STUDIA/VI SEMESTR/UCiSW2/organs/iseconfig/schemaWithKeyboard.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/STUDIA/VI SEMESTR/UCiSW2/organs\</ImplementationReportsDirectory>
   <DateInitialized>2022-04-07T08:20:33</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

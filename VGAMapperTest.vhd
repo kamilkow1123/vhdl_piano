@@ -100,12 +100,10 @@ BEGIN
 		wait for 200ns;
 		Code <= "0011"; --"d", ascii "01100100"
 		wait for 200ns;		
-		--Rdy <= '0';
 		Code <= "0100"; --"D", ascii "01000100"
 		wait for 200ns;
 		Code <= "0101"; --"e", ascii "01100101"
 		wait for 200ns;		
-		--Rdy <= '1';
 		Code <= "0110"; --"f", ascii "01100110"
 		wait for 200ns;
 		Code <= "0111"; --"F", ascii "01000110"
