@@ -27,7 +27,6 @@
         <signal name="XLXN_30(7:0)" />
         <signal name="Busy" />
         <signal name="XLXN_37(11:0)" />
-        <signal name="Code_Out(3:0)" />
         <signal name="VGA_HS" />
         <signal name="VGA_VS" />
         <signal name="XLXN_55" />
@@ -38,6 +37,8 @@
         <signal name="XLXN_63(7:0)" />
         <signal name="XLXN_64" />
         <signal name="XLXN_66" />
+        <signal name="XLXN_67(3:0)" />
+        <signal name="XLXN_68(3:0)" />
         <port polarity="Input" name="PS2_Clk" />
         <port polarity="Input" name="PS2_Data" />
         <port polarity="Input" name="Clk" />
@@ -53,7 +54,6 @@
         <port polarity="Output" name="FPGA_INIT_B" />
         <port polarity="Input" name="Res" />
         <port polarity="Output" name="Busy" />
-        <port polarity="Output" name="Code_Out(3:0)" />
         <port polarity="Output" name="VGA_HS" />
         <port polarity="Output" name="VGA_VS" />
         <port polarity="Output" name="VGA_R" />
@@ -179,11 +179,11 @@
             <blockpin signalname="XLXN_64" name="F0" />
             <blockpin signalname="XLXN_66" name="Data_In_Ready" />
             <blockpin signalname="XLXN_30(7:0)" name="Data_In(7:0)" />
-            <blockpin signalname="Code_Out(3:0)" name="Code_Out(3:0)" />
+            <blockpin signalname="XLXN_67(3:0)" name="Code_Out(3:0)" />
         </block>
         <block symbolname="SawGenerator" name="XLXI_3">
             <blockpin signalname="Clk" name="Clk" />
-            <blockpin signalname="Code_Out(3:0)" name="Code(3:0)" />
+            <blockpin signalname="XLXN_67(3:0)" name="Code(3:0)" />
             <blockpin signalname="XLXN_11" name="Sample_Rdy" />
             <blockpin signalname="XLXN_37(11:0)" name="Sample(11:0)" />
         </block>
@@ -255,7 +255,7 @@
             <blockpin signalname="XLXN_64" name="F0" />
             <blockpin signalname="Clk" name="Clk" />
             <blockpin signalname="XLXN_66" name="Data_In_Ready" />
-            <blockpin signalname="Code_Out(3:0)" name="Code(3:0)" />
+            <blockpin signalname="XLXN_67(3:0)" name="Code(3:0)" />
             <blockpin signalname="XLXN_62" name="Char_Ready" />
             <blockpin signalname="XLXN_63(7:0)" name="Char_Out(7:0)" />
         </block>
@@ -387,17 +387,6 @@
             <wire x2="2656" y1="1296" y2="1296" x1="2416" />
         </branch>
         <iomarker fontsize="28" x="3136" y="1744" name="Busy" orien="R0" />
-        <branch name="Code_Out(3:0)">
-            <wire x2="1728" y1="1168" y2="1168" x1="1680" />
-            <wire x2="1728" y1="1168" y2="1248" x1="1728" />
-            <wire x2="1808" y1="1248" y2="1248" x1="1728" />
-            <wire x2="1904" y1="1248" y2="1248" x1="1808" />
-            <wire x2="1808" y1="1248" y2="2128" x1="1808" />
-            <wire x2="2848" y1="2128" y2="2128" x1="1808" />
-            <wire x2="1744" y1="528" y2="528" x1="1728" />
-            <wire x2="1728" y1="528" y2="1168" x1="1728" />
-        </branch>
-        <iomarker fontsize="28" x="2848" y="2128" name="Code_Out(3:0)" orien="R0" />
         <branch name="VGA_HS">
             <wire x2="3056" y1="176" y2="176" x1="2992" />
         </branch>
@@ -460,5 +449,12 @@
             <wire x2="1200" y1="464" y2="1360" x1="1200" />
         </branch>
         <iomarker fontsize="28" x="304" y="1328" name="Clk" orien="R180" />
+        <branch name="XLXN_67(3:0)">
+            <wire x2="1728" y1="1168" y2="1168" x1="1680" />
+            <wire x2="1728" y1="1168" y2="1248" x1="1728" />
+            <wire x2="1904" y1="1248" y2="1248" x1="1728" />
+            <wire x2="1744" y1="528" y2="528" x1="1728" />
+            <wire x2="1728" y1="528" y2="1168" x1="1728" />
+        </branch>
     </sheet>
 </drawing>
